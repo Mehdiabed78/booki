@@ -292,3 +292,83 @@ footer {
         text-align: center;
     }
 }
+/****** Barre de recherche ***********/
+.search {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-form {
+    display: flex;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    overflow: hidden;
+    align-items: center;
+}
+
+/* Icône de localisation */
+.search-icon {
+    background-color: var(--main-bg-color);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon i {
+    color: var(--main-color);
+    font-size: 18px;
+}
+
+/* Champ de recherche */
+.search-form input {
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    outline: none;
+}
+
+/* Bouton de recherche */
+.search-button {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.search-button:hover {
+    background-color: #0044AA;
+}
+
+/* Icône de recherche (visible uniquement en mobile) */
+.mobile-icon {
+    display: none;
+}
+
+/****** Responsive ***********/
+@media (max-width: 768px) {
+    .search-form input {
+        width: 150px;
+    }
+
+    .desktop-text {
+        display: none;
+    }
+
+    .mobile-icon {
+        display: inline-block;
+    }
+
+    .search-button {
+        padding: 10px;
+        width: 50px;
+        justify-content: center;
+    }
+}
