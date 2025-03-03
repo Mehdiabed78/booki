@@ -9,7 +9,20 @@
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
+h1 {
+    font-size: 34px;  
+    font-weight: 700; 
+    color: #000; 
+    text-align: left; 
+    margin-bottom: 10px; 
+}
 
+h2 {
+    font-size: 22px; 
+    font-weight: 400; 
+    color: #000; 
+    text-align: left;
+    margin-bottom: 20px; 
 .fa-solid {
     color: var(--main-color);
 }
