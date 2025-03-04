@@ -93,7 +93,7 @@ h2 {
 .search-form {
     display: flex;
     align-items: center;
-    border: 2px solid var(--main-color);
+    border: 2px solid var(--main-bg-color);
     border-radius: 25px;
     padding: 5px;
 }
@@ -120,6 +120,9 @@ h2 {
 
 .search-button:hover {
     background-color: #0056e0;
+}
+i.fa-solid.fa-location-dot {
+    color: black;
 }
 
 /****** Filtres ***********/
