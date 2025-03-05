@@ -84,6 +84,16 @@ h2 {
     margin-bottom: 20px;
 }
 
+#Plus{
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.13px;
+    letter-spacing: 0%;
+    width: 811;
+height: 21;
+}
+
 .search {
     display: flex;
     justify-content: flex-start;
