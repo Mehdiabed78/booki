@@ -203,10 +203,13 @@ a {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px; 
+    {
+        width: 871px;
+        height: 614px;
+        gap: 30px;
+        border-radius: 15px;
+        padding: 30px;
+    }
 }
 .hebergements-title {
     display: flex;
@@ -221,21 +224,12 @@ a {
 }
 
 .hebergements-cards img {
-    width: 33%;
-    height: 136px;
+    width: 250,33px;
+    height: 124px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
-.hebergements-cards .card {
-    width: calc(33.333% - 20px); /* 3 cartes par ligne */
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 15px;
-    padding: 15px;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-}
 
 .hebergements-cards .card-title {
     margin-top: 10px;
