@@ -20,6 +20,12 @@ body {
     display:block;
     justify-content: center;
     background-color: white;
+    width: 1440px;
+height: 1722.018798828125px;
+gap: 35px;
+padding-right: 50px;
+padding-left: 50px;
+
 }
 
 .main-container {
@@ -209,6 +215,10 @@ a {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+    width: 1340px;
+height: 614px;
+gap: 40px;
+
 }
 
 /****** Hebergements ***********/
@@ -224,16 +234,15 @@ padding: 30px;
 .hebergements-cards {
     
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
-        grid-template-rows: repeat(2, auto);  /* 2 lignes */
-        gap: 20px; /* Espacement entre les cartes */
-        justify-content: center; /* Centre les éléments */
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(2, auto);  
+        gap: 20px; 
+        justify-content: center; 
         width: 100%;
-        max-width: 871px; /* Correspond à la largeur de la section */
-    }
+        max-width: 871px; 
     
 
-
+}
 .hebergements-title {
     display: flex;
     justify-content: space-between;
@@ -319,6 +328,19 @@ height: 13.25px;
 /****** Populaires ***********/
 .populaires {
 width: 429px;
+height: 614px;
+gap: 30px;
+border-radius: 15px;
+padding: 30px;
+
+}
+.populaires-cards{
+      display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: repeat(3, auto);  
+        justify-content: center; 
+        width: 100%;
+        width: 429;
 height: 614px;
 gap: 30px;
 border-radius: 15px;
