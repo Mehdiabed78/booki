@@ -210,8 +210,20 @@ height: 614px;
 gap: 30px;
 border-radius: 15px;
 padding: 30px;
-
 }
+.hebergements-cards {
+    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+        grid-template-rows: repeat(2, auto);  /* 2 lignes */
+        gap: 20px; /* Espacement entre les cartes */
+        justify-content: center; /* Centre les éléments */
+        width: 100%;
+        max-width: 871px; /* Correspond à la largeur de la section */
+    }
+    
+
+
 .hebergements-title {
     display: flex;
     justify-content: space-between;
@@ -242,15 +254,15 @@ padding-left: 15px;
     
 
 }
-.hebergements-cards .card {
+..hebergements-cards .card {
     display: flex;
-    margin-top: 33px;
-    flex-direction: row;
-    width: 250.3333282470703px;
-height: 207.25px;
-gap: 4px;
-padding-bottom: 15px;
-border-radius: 20px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: 100%;
 }
 
 .hebergements-cards img {
