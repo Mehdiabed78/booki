@@ -203,13 +203,10 @@ a {
 
 /****** Hebergements ***********/
 .hebergements {
-    {
-        width: 871px;
-        height: 614px;
-        gap: 30px;
-        border-radius: 15px;
-        padding: 30px;
-    }
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
 }
 .hebergements-title {
     display: flex;
