@@ -122,9 +122,15 @@ font-size: 16px;
 line-height: 18.78px;
 letter-spacing: 0%;
 
+}
+h3{
+    font-family: Raleway;
+font-weight: 700;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
 
 }
-
 #Plus{
     font-family: Raleway;
     font-weight: 700;
