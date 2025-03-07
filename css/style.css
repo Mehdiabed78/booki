@@ -20,7 +20,8 @@ body {
     display:block;
     justify-content: center;
     background-color: white;
-    width: 1440px;
+    overflow-x: hidden;
+   
 }
 
 .main-container {
