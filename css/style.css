@@ -324,6 +324,7 @@ padding: 30px;
         width: 100%;
         max-width: 871px; 
     
+    
 
 }
 .hebergements-title {
@@ -347,12 +348,7 @@ height: 26px;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    width: 250.3333282470703;
-height: 64.25;
-gap: 8px;
-padding-right: 15px;
-padding-left: 15px;
-
+    
     
 
 }
@@ -513,6 +509,15 @@ height: 12px;
    
 }
 
+#populaires-title{
+    font-family: Raleway;
+font-weight: 700;
+font-size: 22px;
+line-height: 100%;
+letter-spacing: 0%;
+height: 26px;
+display: contents;
+}
 
 
 .activites-grid {
