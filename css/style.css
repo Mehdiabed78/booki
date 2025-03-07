@@ -507,7 +507,11 @@ height: 12px;
     height: 439px;
     gap: 30px;
 }
-activites-title{}
+.activites-grid .card-rating{
+    width: 67.9997329711914px;
+height: 12px;
+
+}
 
     .activites-grid .card {
         
@@ -547,14 +551,23 @@ footer {
     display: flex
 ;
     justify-content: space-between;
+    width: 1340px;
+height: 163px;
+background-color:#F2F2F2;
+;
+
 }
 footer ul {
     list-style: none;
     padding: 0; 
     margin: 0; 
     padding-left: 0%;
-}
+    width: 446.6666564941406px;
+height: 163px;
+gap: 15px;
+padding: 20px;
 
+}
 
 
 
