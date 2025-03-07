@@ -417,7 +417,7 @@ padding: 30px;
         width: 369px;
         height: 498px;
         gap: 30px;
-       
+        overflow-x: hidden;
 }
 
 .populaires-title {
