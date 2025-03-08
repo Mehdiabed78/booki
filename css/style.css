@@ -360,16 +360,7 @@ margin-top:revert-layer;
     
 
 }
-..hebergements-cards .card {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 20px;
-    padding: 15px;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-    height: auto;
-    width: 100%;
-}
+
 
 .hebergements-cards img {
     width: 250.3333282470703px;
