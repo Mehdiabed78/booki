@@ -25,42 +25,49 @@
                     <li><a href="#activites">Activités</a></li>
                 </ul>
             </nav>
-        </header>
+            <section class="title">
+              <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
+              <h2>En plein centre-ville ou en pleine nature</h2>
+            </section>
+               <section class="search">
+                    <form class="search-form">
+                        <label for="search-bar" class="search-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </label>
+                        <input type="text" id="search-bar" placeholder="Marseille, France" aria-label="Rechercher un hébergement">
+                        <button type="submit" class="search-button">
+                            <span class="desktop-text">Rechercher</span>
+                            <i class="fa-solid fa-magnifying-glass mobile-icon"></i>
+                        </button>
+                    </form>
+                </section>
+    
+                <section class="filters">
+                    <div class="filters-container">
+                        <h2>Filtres</h2>
+                        <div class="filter-buttons">
+                            <button class="filter"><i class="fa-solid fa-money-bill-wave"></i> Économique</button>
+                            <button class="filter"><i class="fa-solid fa-person"></i> Familial</button>
+                            <button class="filter"><i class="fa-solid fa-heart"></i> Romantique</button>
+                            <button class="filter"><i class="fa-solid fa-gem"></i> Nos pépites</button>
+                        </div>
+                    </div>
+                </section>
+                
+                
+            <h2><i class="fa-solid fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</h2>   
+       
+       
+         </header>
     
     
        <main>
-         <section class="title"></section>
-        <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
-        <h2>En plein centre-ville ou en pleine nature</h2>
-         </section>
-           <section class="search">
-                <form class="search-form">
-                    <label for="search-bar" class="search-icon">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </label>
-                    <input type="text" id="search-bar" placeholder="Marseille, France" aria-label="Rechercher un hébergement">
-                    <button type="submit" class="search-button">
-                        <span class="desktop-text">Rechercher</span>
-                        <i class="fa-solid fa-magnifying-glass mobile-icon"></i>
-                    </button>
-                </form>
-            </section>
-
-            <section class="filters">
-                <h2><strong> Filtre </strong></h2> 
-                <div class="filter-buttons">
-                    <button class="filter"><i class="fa-solid fa-money-bill-wave"></i> Économique</button>
-                    <button class="filter"><i class="fa-solid fa-person"></i> Familial</button>
-                    <button class="filter"><i class="fa-solid fa-heart"></i> Romantique</button>
-                    <button class="filter"><i class="fa-solid fa-gem"></i> Nos pépites</button>
-                </div>
-            </section>
-            <h2><i class="fa-solid fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</h2>
+         
             
             <div class="hebergements-and-populaires">
                 
                 <section class="hebergements">
-                    <h1 id="populaires-title"><strong> Hébergements à Marseille </strong></h1>
+                    <h1 class="hebergements-title""><strong> Hébergements à Marseille </strong></h1>
                     
                     <div class="hebergements-cards">
                         
@@ -165,8 +172,9 @@
                 
 
                 <section class="populaires">
+                    <h1 class="populaires-title"><strong> Les plus populaires</strong></h1>
                     <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
-                    <h1 id="populaires-title"><strong> Les plus populaires </strong></h1>
+                    
                     <div class="populaires-cards">
                         <article class="card">
                             <img src="./images/hotel7.jpg" alt="Hôtel L’étoile de mer">
@@ -235,16 +243,16 @@
        
        
         <footer>
-            <ul><p><strong >À propos</strong></p>
+            <ul><strong >À propos</strong>
                 <li>Fonctionnement du site</li>
                 <li>Conditions générales</li>
                 <li>Données et confidentialité</li>
             </ul>
-            <ul><p><strong >Nos hébergements</strong></p>
+            <ul><strong >Nos hébergements</strong>
                 <li>Charte qualité</li>
                 <li>Proposer un hôtel</li>
             </ul>
-            <ul><p><strong >Assistance</strong></p>
+            <ul><strong >Assistance</strong>
                 <li>Centre d’aide</li>
                 <li>Nous contacter</li>
             </ul>

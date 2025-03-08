@@ -21,7 +21,8 @@ body {
     justify-content: center;
     background-color: white;
     overflow-x: hidden;
-   
+    max-width: 1440px; 
+    min-width: 320px; 
 }
 
 .main-container {
@@ -131,15 +132,7 @@ line-height: 100%;
 letter-spacing: 0%;
 
 }
-#Plus{
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21.13px;
-    letter-spacing: 0%;
-    width: 811;
-height: 21;
-}
+
 
 .search {
     display: flex;
@@ -219,10 +212,22 @@ i.fa-solid.fa-location-dot {
     margin-top: 20px;
 }
 
+.filter-container h {
+    width: 54px;
+    height: 21px;
+    overflow: hidden; /* Coupe le texte s'il dépasse */
+    white-space: nowrap; /* Empêche le retour à la ligne */
+    font-weight:bold ;
+    
+}
+
+
 .filter-buttons {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
 }
 
 .filter {
@@ -338,6 +343,7 @@ line-height: 25.83px;
 letter-spacing: 0%;
 width: 811px;
 height: 26px;
+margin-top:revert-layer;
 
 
 }
@@ -443,9 +449,13 @@ font-size: 22px;
 line-height: 25.83px;
 letter-spacing: 0%;
 width: 369px;
-height: 26px
-
+height: 26px;
+margin-top:revert-layer;
+width: 100%; /* Permet au titre de s'étendre sur toute la largeur */
+    max-width: 369px; /* Ajoute une limite pour ne pas trop élargir */
+    margin-top: 10px; /* Remplace revert-layer */
 }
+
 
 .populaires-cards .card {
     display: flex;
@@ -509,15 +519,7 @@ height: 12px;
    
 }
 
-#populaires-title{
-    font-family: Raleway;
-font-weight: 700;
-font-size: 22px;
-line-height: 100%;
-letter-spacing: 0%;
-height: 26px;
-display: contents;
-}
+
 
 
 .activites-grid {
@@ -600,9 +602,8 @@ padding: 20px;
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    /* 📌 Structure principale */
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -613,29 +614,132 @@ padding: 20px;
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 30px;
+    }
+
+    /* 📌 Section "Les plus populaires" */
+    .populaires-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
 
     .populaires-cards {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap; /* Permet aux cartes de passer à la ligne */
         justify-content: space-between;
+        gap: 15px;
     }
 
-    .populaires-cards a {
-        width: 30%;
+    .populaires-cards .card {
+        width: 48%; /* Affiche 2 cartes par ligne */
     }
 
-    .populaires-cards .card-title {
-        font-size: 14px;
+    /* 📌 Section "Filtres" */
+    .filters-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
 
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
+    .filter-buttons {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    /* 📌 Section "Hébergements" */
+    .hebergements-cards {
+        grid-template-columns: repeat(2, 1fr); /* Passe à 2 colonnes */
+        gap: 15px;
+    }
+
+    .hebergements-cards .card {
+        width: 100%;
     }
 }
-
-/* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    /* 📌 Structure principale */
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column; /* 1 seule carte par ligne */
+        gap: 15px;
+    }
+
+    .populaires-cards .card {
+        width: 100%;
+    }
+
+    /* 📌 Section "Filtres" */
+    .filters-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .filter-buttons {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    /* 📌 Changement des couleurs de fond pour le mode mobile */
+    .hebergements {
+        background-color: white;
+    }
+
+    .populaires {
+        background-color: var(--main-bg-color);
+    }
+
+    /* 📌 Section "Hébergements" */
+    .hebergements-cards {
+        grid-template-columns: repeat(1, 1fr); /* Passe à 1 colonne */
+        gap: 10px;
+    }
+
+    .hebergements-cards .card {
+        width: 100%;
+    }
+
+    /* 📌 Section "Activités" */
+    .activites-grid {
+        display: flex;
+        flex-direction: column; /* Affiche les activités en colonne */
+        gap: 15px;
+    }
+
+    .activites-grid .card {
+        width: 100%;
+    }
+
+    /* 📌 Ajustement du header pour mobile */
+    .header-nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-nav img {
+        margin-bottom: 15px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 5px 0;
+    }
 }
