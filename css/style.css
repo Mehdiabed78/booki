@@ -211,25 +211,23 @@ i.fa-solid.fa-location-dot {
 /****** Filtres ***********/
 .filters {
     margin-top: 20px;
-}
-
-.filter-container h {
-    width: 54px;
-    height: 21px;
-    overflow: hidden; /* Coupe le texte s'il dépasse */
-    white-space: nowrap; /* Empêche le retour à la ligne */
-    font-weight:bold ;
     
 }
 
-
 .filter-buttons {
     display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: start;
+    align-items: center; /* Aligner le h2 et les boutons sur la même ligne */
+    justify-content: flex-start; /* Alignement à gauche */
+    gap: 15px; /* Espacement entre les éléments */
+    flex-wrap: wrap; /* Permet le retour à la ligne si nécessaire */
 }
+
+.filter-buttons h2 {
+    margin: 0; /* Supprime les marges qui peuvent le pousser vers le haut */
+    white-space: nowrap; /* Empêche le titre de se casser en plusieurs lignes */
+    line-height: 1; /* Assure un bon alignement vertical */
+}
+
 
 .filter {
     background-color: white;
