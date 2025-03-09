@@ -96,10 +96,9 @@ text-align: center;
 h1 {
     color: #000;
     text-align: left;
-    margin-top: 100px;
+    margin-top:100px;
     margin-bottom: 10px;
-  
-gap: 8px;
+  gap: 8px;
 width: 1280px;
 height: 30.018735885620117px;
 font-family: Raleway;
@@ -110,10 +109,21 @@ letter-spacing: 0%;
 
 }
 
+.populaires-title h1 {
+    color: #000;
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25.83px;
+    margin-top: auto;
+}
 h2 {
    
     color: #000;
     text-align: left;
+    
     margin-bottom: 20px;
     width: 1340px;
 height: 19px;
@@ -260,9 +270,9 @@ border-width: 2px;
 }
 
 .filter:hover {
-    background-color: var(--main-color);
-    color: white;
-    transition: 0.3s ease-in-out;
+    background-color: #DEEBFF;
+    
+     transition: 0.3s ease-in-out;
 }
 
 section.info {
@@ -462,18 +472,21 @@ padding: 30px;
 
 .populaires-title {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-font-family: Raleway;
-font-weight: 700;
-font-size: 22px;
-line-height: 25.83px;
-letter-spacing: 0%;
-width: 369px;
-height: 26px;
-
-    margin-top: 10px; 
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25.83px;
+    letter-spacing: 0%;
+    width: 369px;
+    height: 26px;
+    margin-top: 10px;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
 }
+
 
 
 .populaires-cards .card {
@@ -618,147 +631,7 @@ padding: 20px;
 }
 
 
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
-@media (max-width: 1024px) {
-    /* 📌 Structure principale */
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
-
-    .hebergements {
-        width: 100%;
-    }
-
-    .populaires {
-        width: 100%;
-        margin-top: 30px;
-    }
-
-    /* 📌 Section "Les plus populaires" */
-    .populaires-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap; /* Permet aux cartes de passer à la ligne */
-        justify-content: space-between;
-        gap: 15px;
-    }
-
-    .populaires-cards .card {
-        width: 48%; /* Affiche 2 cartes par ligne */
-    }
-
-    /* 📌 Section "Filtres" */
-    .filters-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .filter-buttons {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-
-    /* 📌 Section "Hébergements" */
-    .hebergements-cards {
-        grid-template-columns: repeat(2, 1fr); /* Passe à 2 colonnes */
-        gap: 15px;
-    }
-
-    .hebergements-cards .card {
-        width: 100%;
-    }
-}
+/* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* 📌 Structure principale */
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
-
-    .populaires {
-        width: 100%;
-        margin-top: 30px;
-    }
-
-    .populaires-cards {
-        display: flex;
-        flex-direction: column; /* 1 seule carte par ligne */
-        gap: 15px;
-    }
-
-    .populaires-cards .card {
-        width: 100%;
-    }
-
-    /* 📌 Section "Filtres" */
-    .filters-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .filter-buttons {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-
-    /* 📌 Changement des couleurs de fond pour le mode mobile */
-    .hebergements {
-        background-color: white;
-    }
-
-    .populaires {
-        background-color: var(--main-bg-color);
-    }
-
-    /* 📌 Section "Hébergements" */
-    .hebergements-cards {
-        grid-template-columns: repeat(1, 1fr); /* Passe à 1 colonne */
-        gap: 10px;
-    }
-
-    .hebergements-cards .card {
-        width: 100%;
-    }
-
-    /* 📌 Section "Activités" */
-    .activites-grid {
-        display: flex;
-        flex-direction: column; /* Affiche les activités en colonne */
-        gap: 15px;
-    }
-
-    .activites-grid .card {
-        width: 100%;
-    }
-
-    /* 📌 Ajustement du header pour mobile */
-    .header-nav {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .header-nav img {
-        margin-bottom: 15px;
-    }
-
-    .menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menu li {
-        margin: 5px 0;
-    }
+    /* ... */
 }
